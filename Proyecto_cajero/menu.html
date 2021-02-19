@@ -4,9 +4,47 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Tu Banca en línea</title>
+    <title>Tu Banco BNG</title>
+    <link rel="stylesheet" href="./menu.css">
 </head>
 <body>
-    <h1>Bienvenido a tu banca en linea</h1>
+    <h1>Bienvenido a tu banca</h1>
+    <main> 
+        <div class="main-frame">
+            <h2>Selecciona la operación que quieras realizar el día</h2>
+
+            <div class="menu">
+               
+                <div class="menu-container"> 
+                    <label>Consulta tu saldo:  </label> 
+                    <button  onclick=""; class="button" id="saldo"> Consultar</button>
+                    <p id="new-saldo"> Tu saldo es: </p>    
+                </div>
+             
+                <div class="menu-container"> 
+                <label for="deposito"> Hacer un deposito: </label>
+                <button onclick=""; id="deposito" class="button"> Depositar</button>
+                <input id="deposit-cant" class="entrada" type="text" >
+                <p id="new-deposit" > Tu nuevo saldo es: </p>
+                </div>
+                
+               <div class="menu-container">
+                <label for="">Retira tu dinero: </label>
+                <button onclick=""; class="button" id="retirar">Retirar</button>
+                <input id="retiro-cant" class="entrada" type="text" >
+                <p id="new-draw"> Tu nuevo saldo es:</p>
+               </div>
+               
+                
+
+            </div>
+           
+
+
+
+        </div>
+    
+    
+    </main>
 </body>
 </html>

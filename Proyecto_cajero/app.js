@@ -6,6 +6,7 @@ const cuentas = [
      { "nombre": 'Luis', "saldo": 67, "password": '123' }
    ];
 
+   let usuarioValido = false;
 
   function validacion(){
     let usuario = document.getElementById("usuario").value;
@@ -13,12 +14,9 @@ const cuentas = [
     for ( let i=0; i < cuentas.length; i++){
       let element = cuentas [i];
       if (element.nombre === usuario && element.password === contraseña){
-       return true;
+        usuarioValido= true;
+        window.location.href="menu.html";
     }  
    }
   }
-      if (validacion () == true){
-         alert("Credenciales incorrectas");
-         }
-       else
-       window.location.href="menu.html";
+       
